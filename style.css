@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b3b3b;
+}
+
+.mainBox {
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #f1f5f8;
+}
+
+.serverDatas {
+  background-color: #cfcfcc;
+}
+
+.updateContainer {
+  background-color: #9dffb3;
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.updateContainer:hover,
+.updateBtn:hover,
+.editBtn:hover,
+.delBtn:hover {
+  scale: 1.2;
+}
+
+.delContainer {
+  display: none;
+}
