@@ -68,7 +68,7 @@ const delFun = (data) => {
 
 let jsonDatas;
 const fetchInfo = async () => {
-  const url = "http://localhost:3000/users";
+  const url = "https://msquarecrud.onrender.com/users";
   const fetchDatas = await fetch(url);
   jsonDatas = await fetchDatas.json();
 
@@ -114,7 +114,7 @@ fetchInfo();
 submitBtn.addEventListener("click", async () => {
   const checkCon = nameForm.value.length > 0;
   if (checkCon) {
-    const response = await fetch("http://localhost:3000/users", {
+    const response = await fetch("https://msquarecrud.onrender.com/users", {
       method: "POST",
       body: JSON.stringify(postNewUser()),
     });
@@ -128,7 +128,7 @@ submitBtn.addEventListener("click", async () => {
 
 updateBtn.addEventListener("click", async () => {
   updateContainer.style.display = "none";
-  const response = await fetch("http://localhost:3000/users", {
+  const response = await fetch("https://msquarecrud.onrender.com/users", {
     method: "PUT",
     body: JSON.stringify(putUserData()),
   });
@@ -144,7 +144,7 @@ cancelBtn.addEventListener("click", () => {
 deleteBtn.addEventListener("click", async () => {
   updateContainer.style.display = "none";
   delContainer.style.display = "none";
-  const response = await fetch("http://localhost:3000/users", {
+  const response = await fetch("https://msquarecrud.onrender.com/users", {
     method: "DELETE",
     body: JSON.stringify(delData),
   });
