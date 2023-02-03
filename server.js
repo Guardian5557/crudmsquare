@@ -1,6 +1,9 @@
 const fs = require("fs");
 const http = require("http");
 
+const day = new Date().toLocaleDateString();
+const time = new Date().toLocaleTimeString();
+
 const userDatas = [
   {
     name: "kyawkyaw",

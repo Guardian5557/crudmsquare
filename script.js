@@ -38,11 +38,11 @@ const clearFun = () => {
 };
 
 const updateFun = (data) => {
-  // updateContainer.style.opacity = "1";
   delContainer.style.display = "none";
   updateContainer.style.display = "block";
   nameUpdate.value = data.name;
   emailUpdate.value = data.email;
+  return;
 };
 
 const putUserData = () => {
@@ -81,6 +81,12 @@ const fetchInfo = async () => {
         <div class="m-1 fw-bold text-white">name: ${jsonDatas[i].name}</div>
         <div class="m-1 fw-bold text-white">email: ${jsonDatas[i].email}</div>
         <div class="m-1 fw-bold text-white">pwd: ${jsonDatas[i].pwd}</div>
+        <div class="m-1 fw-bold text-white">createdAt: ${
+          jsonDatas[i].createdAt
+        }</div>
+        <div class="m-1 fw-bold text-white">updatedAt: ${
+          jsonDatas[i].updatedAt
+        }</div>
       </div>
 
       <div class="mt-2">
